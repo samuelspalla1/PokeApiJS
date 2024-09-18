@@ -1,0 +1,300 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@300;400;500;600;700;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Oxanium', cursive;
+}
+
+body{
+    text-align: center;
+    min-height: 100vh;
+    
+}
+
+main{
+    position: relative;
+    margin-top: 3%;
+    padding: 15px;
+    display: inline-block;
+}
+
+.pokedex{
+    width: 100%;
+    max-width: 450px;
+
+}
+
+
+
+.poke_img{
+    position: absolute;
+    top: 30%;
+    right: 40%;
+    height: 18%;
+
+
+    
+
+}
+
+.poke_data{
+    position: absolute;
+    top: 54.5%;
+    right: 25%;
+    font-weight: 600;
+    font-size: clamp(8px, 6vw, 1.7rem);
+    color: gray
+}
+
+.poke_name{
+    color: black;
+    text-transform: capitalize;
+}
+
+.poke_number{
+    color: green;
+}
+
+.form{
+    position: absolute;
+    width: 80%;
+    top: 70%;
+    right: 3%;
+    display: flex;
+    align-items: center;
+    
+}
+
+.input_search{
+    width: 70%;
+    padding: 3.5%;
+    outline: none;
+    font-weight: 600;
+    font-size: clamp(6px, 5vw, 1rem);
+    border: 1px solid black ; 
+    border-radius: 6px;
+    box-shadow: -3px 4px 0 rgb(124, 123, 123), -5px 7px rgb(49, 48, 48);
+
+}
+
+.button-pesq{
+    width: 20%;
+    position: absolute;
+    right: 14%;
+    top:30%
+}
+
+.form img{
+    width: 30%;
+    height: 5%;
+    cursor: pointer;
+}
+
+.buttons{
+    position: absolute;
+    width: 60%;
+    display: flex;
+    gap: 20px;
+    top: 81%;
+    right: 25%;   
+}
+
+.btn{
+    width: 50%;
+    padding: 4%;
+    background-color: rgb(70, 64, 64);
+    color: white;
+    font-weight: 600;
+    font-size: clamp(8px, 6vw, 1rem);
+    border-radius: 5px;
+    box-shadow: -2px 3px 0 rgb(37, 36, 36), -4px 5px black;
+
+}
+
+.btn:active{
+    box-shadow: inset -3px 4px 0 rgb(37, 36, 36);
+    font-size: 0.8rem;
+}
+
+    
+.buttons-v{
+    position: absolute;
+    width: 20%;
+    
+    top: 10%;
+    right: 20.5%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.btn-v{
+    width: 100%;
+    padding: 4%;
+    background-color:rgb(124, 123, 123);
+    color: white;
+    font-weight: 600;
+    font-size: clamp(6px, 4vw, 0.7rem);
+    border-radius: 5px;
+    box-shadow:  -2px 3px black;
+    
+}
+
+.btn-shiny{
+    background: linear-gradient(
+        217deg,
+        rgba(255, 0, 0, 0.8),
+        rgba(255, 0, 0, 0) 70.71%
+      ), linear-gradient(127deg, rgba(0, 255, 0, 0.8), rgba(0, 255, 0, 0) 70.71%),
+      linear-gradient(336deg, rgba(0, 0, 255, 0.8), rgba(0, 0, 255, 0) 70.71%);
+}
+
+.btn-v:active{
+    box-shadow: inset -2px 3px  black;
+    
+}
+
+.types{
+    position: absolute;
+    width: 40%;
+    top: 62.5%;
+    left: 26%;
+
+    display: flex;
+    gap:10px;
+}
+
+.types div{
+    width: 50%;
+
+    background-color:white;
+    border: 2px solid black;
+    border-radius: 5px;
+    box-shadow:  -2px 3px black;
+    padding: 2%;
+    font-size: clamp(6px, 4vw, 1.1rem);
+    color: black;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+
+.poke_altura{
+    position: absolute;
+    top: 23%;
+    left: 19%;
+    font-size: clamp(6px, 4vw, 1.2rem);
+    
+}
+
+.alt{
+    background-color:rgb(73, 67, 67) ;
+    color: white;
+    border: 2px solid black;
+    border-radius: 5px;
+    box-shadow:  -2px 3px black;
+    
+}
+
+.poke_peso{
+    position: absolute;
+    top: 23%;
+    left: 54% ;
+    font-size: clamp(6px, 4vw, 1.2rem);
+    
+
+}
+
+.peso{
+    background-color:rgb(73, 67, 67) ;
+    color: white;
+    border: 2px solid black;
+    border-radius: 5px;
+    box-shadow:  -2px 3px black;
+    
+}
+
+.stats{
+    background-color: #ff1a4c;
+    position: absolute;
+    left: 10%;
+    top: 97%;
+    width: 77%;
+    height: 25%;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 8px;
+
+    opacity: 0;
+    transition: all 0.5s;
+}
+
+.hide{
+    opacity: 1;
+    
+}
+
+.stats .status{
+    display: flex;
+    color: white;
+    height: 25%;
+    width: 100%;
+    max-width: 130px;
+    justify-content: center;
+    align-items: center;
+
+    background-color:rgb(73, 67, 67) ;
+    border: 2px solid black;
+    border-radius: 5px;
+    box-shadow:  -2px 3px black;
+}
+
+.btn-status{
+    position: absolute;
+    bottom: 6.5%;
+    right: 50%;
+    width: 10%;
+    background-color:rgb(73, 67, 67) ;
+    color: white;
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 5px;
+    box-shadow:  -2px 3px black;
+
+
+}
+    
+.btn-status:active{
+    box-shadow: inset -2px 3px  black;
+    font-size: clamp(5px, 3vw, 0.7rem);
+    
+}
+
+.seta{
+    rotate: 180deg;
+    
+}
+
+.center{
+    position: absolute;
+    top: 12%;
+    left: 30%;
+}
+
+.poke_img-static{
+    width: 120%;
+
+}
+
+.gen{
+    position: absolute;
+    top: 6.5%;
+    left: 18%;
+    font-weight: 600;
+    font-size: clamp(5px, 3vw, 2rem);
+    color: rgba(0, 0, 0, 0.664);
+}
+
+

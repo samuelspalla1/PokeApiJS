@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style2.css">
+    <link rel="shortcut icon" href="img/pokeball.png" type="image/x-icon">
+
+    
+    <title>Pokedex</title>
+</head>
+<body>
+    
+    <div class="mapa"><img src="#" alt="" ></div>
+
+    <main data-aos="flip-right" data-aos-easing="ease-out-cubic"
+    data-aos-duration="2000" >
+        <img src="img/pokedex.png" alt="Pokedex" class="pokedex">
+        <img src="#" alt="Pokemon" class="poke_img">
+
+        
+        
+        <h1 class="poke_data">
+            <span class="poke_number"></span> -
+            <span class="poke_name"></span>
+        </h1>
+
+        
+        <div class="types"></div>
+        
+
+        <p class="poke_altura">
+            <span class="alt alt-poke"></span>
+        </p>
+
+        <p class="poke_peso">
+            <span class="peso peso-poke"></span>
+        </p>
+
+        <form class="form">
+            <input type="search" class="input_search" placeholder="Número ou Nome" required>
+            <div class="button-pesq"><img src="img/44623.png" alt="Pesquisar" class="btn-pesquisar"></div>
+        </form>
+
+        <div class="buttons">
+            <button class="btn btn-prev"> &lt; Voltar </button>
+            <button class="btn btn-next"> Próximo &gt; </button>
+        </div>
+        <div class="buttons-v">
+            <button class="btn-v btn-shiny">Shiny</button>
+            <button class="btn-v btn-default">Normal</button>
+        </div>
+
+        <div class="btn-stats">
+            <button class="btn-s btn-status">&or;</button>
+        </div>
+
+        <div class="stats">
+            <div class="left">
+                <p class="status stats-hp"></p><br>
+                <p class="status stats-atk"></p><br>
+                <p class="status stats-def"></p>
+            </div>
+            <div class="center">
+                <img src="#" alt="Pokemon" class="poke_img-static">
+            </div>
+            <div class="right">
+                <p class="status stats-sp-atk"></p><br>
+                <p class="status stats-sp-def"></p><br>
+                <p class="status stats-speed"></p>
+            </div>
+        </div>
+
+        <div class="gen">
+            <span class="span-gen"></span>
+        </div>
+    </main>
+    
+    
+</body>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>  
+<script src="js/javascript.js"></script>
+<script src="js/javascript2.js"></script>
+
+  
+</html>
